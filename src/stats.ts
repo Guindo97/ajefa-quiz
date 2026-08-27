@@ -1,3 +1,5 @@
+import { QUIZ_ID } from './quiz';
+
 export type QuizEvent = {
   event_type: 'quiz_viewed' | 'quiz_started' | 'question_answered' | 'quiz_completed' | 'quiz_restarted';
   question_number?: number;
@@ -25,7 +27,7 @@ export type QuizStats = {
 
 const supabaseUrl = (import.meta.env.VITE_SUPABASE_URL as string | undefined)?.replace(/\/$/, '');
 const supabaseAnonKey = import.meta.env.VITE_SUPABASE_ANON_KEY as string | undefined;
-const quizId = (import.meta.env.VITE_QUIZ_ID as string | undefined) || 'droit-famille-2026';
+const quizId = QUIZ_ID;
 
 export function statsConfigured() {
   return Boolean(supabaseUrl && supabaseAnonKey);

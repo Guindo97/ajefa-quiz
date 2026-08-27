@@ -3,54 +3,13 @@ import { ArrowRight, BarChart3, CheckCircle2, LockKeyhole, RotateCcw, Trophy, X,
 import { track } from './analytics';
 import { fetchQuizStats, QuizStats, recordQuizEvent, statsConfigured } from './stats';
 
-type Question = {
-  question: string;
-  answers: string[];
-  correct: number;
-  explanation?: string;
-};
-
-const questions: Question[] = [
-  {
-    question: 'Une personne doit être séparée pendant 6 mois avant de pouvoir demander le divorce au Canada.',
-    answers: ['Vrai', 'Faux'],
-    correct: 1,
-    explanation:
-      'Au Canada, le motif de divorce le plus courant est la séparation pendant au moins un an. Une personne peut toutefois commencer certaines démarches de divorce pendant cette période, mais le divorce ne sera généralement accordé qu’après une année de séparation. La loi prévoit aussi d’autres motifs de divorce, comme l’adultère ou la cruauté physique ou mentale.',
-  },
-  {
-    question: 'Un parent peut arrêter de payer la pension alimentaire pour enfants parce qu’il n’a plus de contact avec son enfant.',
-    answers: ['Vrai', 'Faux'],
-    correct: 1,
-    explanation:
-      'Le droit de voir son enfant et l’obligation de payer une pension alimentaire sont deux questions différentes. Un parent doit continuer à respecter ses obligations alimentaires, même s’il y a des difficultés concernant les visites.',
-  },
-  {
-    question: 'Les conflits familiaux doivent toujours être réglés devant un juge.',
-    answers: ['Vrai', 'Faux'],
-    correct: 1,
-    explanation:
-      'Les conflits familiaux peuvent souvent être réglés autrement que par un juge. Les familles peuvent utiliser des moyens comme la négociation, la médiation ou des ententes écrites pour trouver une solution.',
-  },
-  {
-    question: "En cas de séparation, lequel de ces sujets peut faire l'objet d'une entente entre les parents?",
-    answers: ['Le temps parental.', 'Les responsabilités décisionnelles.', 'La pension alimentaire pour enfants.', 'Toutes ces réponses.'],
-    correct: 3,
-  },
-  {
-    question: 'Après une séparation, quel est le principal critère pris en compte pour les décisions concernant les enfants?',
-    answers: ['Le revenu des parents', "Le souhait de l'enfant", "L'intérêt supérieur de l'enfant", 'Le temps que chaque parent passe avec l’enfant'],
-    correct: 2,
-    explanation:
-      "En Alberta, les décisions concernant les enfants sont prises en fonction de leur intérêt supérieur. Le tribunal peut tenir compte de plusieurs facteurs, notamment les besoins de l'enfant, sa sécurité, ses relations avec ses parents et, selon son âge et sa maturité, de son opinion.",
-  },
-];
+import { questions, QUIZ_TITLE, QUIZ_TOPIC } from './quiz';
 
 function scoreMessage(score: number) {
-  if (score === 5) return 'Excellent ! Vous maîtrisez très bien ces notions de droit de la famille.';
+  if (score === questions.length) return `Excellent ! Vous maîtrisez très bien ces notions de ${QUIZ_TOPIC}.`;
   if (score >= 4) return 'Très bon résultat ! Quelques nuances à retenir.';
   if (score >= 3) return 'Bon résultat. Relisez les explications pour consolider vos connaissances.';
-  return 'Continuez à explorer le droit de la famille : chaque explication compte.';
+  return `Continuez à explorer le ${QUIZ_TOPIC} : chaque explication compte.`;
 }
 
 export default function App() {
@@ -128,7 +87,7 @@ export default function App() {
         <main className="shell">
           <section className="hero">
             <Brand />
-            <div className="hero-copy"><p className="eyebrow">Quiz juridique AJEFA</p><h1>Quiz sur le droit de la famille</h1><p>5 questions. Choisissez votre réponse, découvrez immédiatement si elle est correcte et consultez l’explication avant de continuer.</p></div>
+            <div className="hero-copy"><p className="eyebrow">Quiz juridique AJEFA</p><h1>{QUIZ_TITLE}</h1><p>5 questions. Choisissez votre réponse, découvrez immédiatement si elle est correcte et consultez l’explication avant de continuer.</p></div>
           </section>
 
           <section className="progress-wrap" aria-label="Progression du quiz">

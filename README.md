@@ -19,3 +19,9 @@ Pour activer les statistiques persistantes, consultez `SETUP_SUPABASE.md`.
 npm install
 npm run dev
 ```
+
+## Mise à jour hebdomadaire du Quiz du vendredi
+
+Le contenu du quiz est centralisé dans `src/quiz.ts`.
+Chaque vendredi, remplacez uniquement `QUIZ_ID`, `QUIZ_TITLE`, `QUIZ_TOPIC` et le tableau `questions` dans ce fichier.
+Le `QUIZ_ID` doit être unique pour chaque édition afin que les statistiques Supabase ne se mélangent pas avec celles des semaines précédentes.
