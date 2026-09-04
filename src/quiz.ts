@@ -7,44 +7,57 @@ export type Question = {
 
 // Mise à jour hebdomadaire du Quiz du vendredi.
 // Pour le prochain vendredi, il suffit de remplacer les informations ci-dessous.
-export const QUIZ_ID = 'quiz-vendredi-2026-08-28';
-export const QUIZ_TITLE = 'Quiz sur le droit du travail';
-export const QUIZ_TOPIC = 'droit du travail';
+
+export const QUIZ_ID = 'quiz-vendredi-2026-09-04';
+
+export const QUIZ_TITLE = 'Quiz sur les droits et responsabilités à l’école';
+
+export const QUIZ_TOPIC = 'droits et responsabilités à l’école';
 
 export const questions: Question[] = [
   {
-    question: 'Un employeur peut-il payer un employé moins que le salaire minimum simplement parce que l’employé accepte ?',
-    answers: ['Oui', 'Non'],
-    correct: 1,
-    explanation:
-      'Un employeur doit respecter le salaire minimum prévu par la loi, même si l’employé accepte de recevoir un salaire inférieur. Un accord entre l’employeur et l’employé ne permet pas de contourner les normes d’emploi.',
-  },
-  {
-    question: "Un employeur peut harceler un employé tant qu'il n'y a pas de violence physique.",
-    answers: ['Vrai', 'Faux'],
-    correct: 1,
-    explanation:
-      'Le harcèlement au travail ne se limite pas à la violence physique. Certains comportements, paroles ou gestes peuvent constituer du harcèlement ou de la violence au travail.',
-  },
-  {
-    question: 'Tous les employés ont droit à des vacances annuelles payées.',
+    question:
+      'Un parent peut poser des questions à l’école s’il ne comprend pas les règles ou les procédures scolaires.',
     answers: ['Vrai', 'Faux'],
     correct: 0,
     explanation:
-      'Les employés visés par les normes d’emploi ont droit à des vacances annuelles payées. La durée minimale des vacances peut augmenter avec l’ancienneté.',
+      'Les parents peuvent demander des explications concernant les règles, les politiques, les programmes et les décisions qui concernent leur enfant.',
   },
   {
-    question: 'Pendant un congé de maternité ou parental, l’employeur doit nécessairement continuer à verser le salaire habituel de l’employé.',
+    question:
+      'Un parent peut contester une décision de l’école sans manquer de respect au personnel scolaire.',
+    answers: ['Vrai', 'Faux'],
+    correct: 0,
+    explanation:
+      'Les parents peuvent poser des questions, exprimer leurs préoccupations ou, selon la situation, contester une décision de l’école. Ils doivent toutefois utiliser les mécanismes appropriés et communiquer de manière respectueuse.',
+  },
+  {
+    question:
+      'Un élève reçoit plusieurs messages insultants sur un réseau social de la part d’autres élèves de son école. Que peut-il faire?',
+    answers: [
+      'Conserver les messages ou faire des captures d’écran',
+      'En parler à un parent ou à un adulte de confiance',
+      'Signaler la situation à l’école',
+      'Toutes ces réponses',
+    ],
+    correct: 3,
+    explanation:
+      'Conserver les preuves, en parler à un adulte de confiance et signaler la situation à l’école sont des démarches qui peuvent aider à gérer une situation de cyberintimidation.',
+  },
+  {
+    question:
+      'Un élève peut publier sur les réseaux sociaux une photo intime ou une vidéo intime d’un autre élève sans le consentement de cette personne.',
     answers: ['Vrai', 'Faux'],
     correct: 1,
     explanation:
-      'Les employeurs ne sont pas tenus de verser un salaire ou des avantages sociaux pendant ce congé, sauf si le contrat de travail ou une convention collective prévoit le contraire.',
+      'La diffusion d’une image ou d’une vidéo intime d’une personne sans son consentement peut avoir de graves conséquences juridiques. Au Canada, la publication ou la distribution non consensuelle d’une image intime peut constituer une infraction criminelle.',
   },
   {
-    question: 'Que signifie « accommodement » au travail ?',
-    answers: ['Une promotion', 'Une adaptation pour répondre à un besoin particulier de l’employé', 'Une augmentation de salaire'],
+    question:
+      'Une école peut refuser l’accès à l’éducation à un élève simplement parce qu’il ne parle pas suffisamment bien l’anglais.',
+    answers: ['Vrai', 'Faux'],
     correct: 1,
     explanation:
-      'L’accommodement consiste à adapter certaines conditions de travail afin de répondre à un besoin particulier de l’employé, lorsque ce besoin est lié à un motif protégé par les droits de la personne.',
+      'Une difficulté à parler anglais ne permet pas, à elle seule, de refuser à un élève l’accès à l’éducation. L’école peut évaluer ses besoins linguistiques et lui offrir un soutien approprié, notamment dans le cadre de programmes d’apprentissage de l’anglais comme langue supplémentaire (EAL – English as an Additional Language).',
   },
 ];
