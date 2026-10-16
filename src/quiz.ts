@@ -6,54 +6,54 @@ export type Question = {
   explanation?: string;
 };
 
-export const QUIZ_ID = 'quiz-vendredi-2026-10-09';
-export const QUIZ_TITLE = 'Quiz sur les droits des locataires en Alberta';
-export const QUIZ_TOPIC = 'droits des locataires en Alberta';
+export const QUIZ_ID = 'quiz-vendredi-2026-10-16';
+export const QUIZ_TITLE = 'Quiz sur les testaments et successions en Alberta';
+export const QUIZ_TOPIC = 'testaments et successions en Alberta';
 
 export const questions: Question[] = [
   {
-    question: "Un locataire quitte le logement et ne doit rien : ni loyer, ni dommages, ni nettoyage. L’inspection du logement a également été effectuée. Dans quel délai le propriétaire doit-il lui rendre son dépôt?",
-    answers: [
-      '5 jours',
-      '10 jours',
-      '30 jours',
-      '60 jours'
-    ],
-    correct: 1,
-    explanation: "Le propriétaire doit rendre le dépôt dans les 10 jours qui suivent le départ du locataire."
-  },
-  {
-    question: "L'inspection du logement à l'arrivée et au départ est facultative ?",
+    question: "Une personne peut rédiger elle-même son testament entièrement à la main et le signer, sans témoins, en Alberta.",
     answers: ['Vrai', 'Faux'],
-    correct: 1,
-    explanation: "Les deux inspections sont obligatoires. La première se fait dans la semaine qui précède ou qui suit l'emménagement. La seconde se fait dans la semaine qui précède ou qui suit le déménagement."
-  },
-  {
-    question: "Un locataire conteste une retenue sur son dépôt. Quel organisme peut trancher ce différend?",
-    answers: [
-      'Le Residential Tenancy Dispute Resolution Service (RTDRS)',
-      'Le registre foncier',
-      'Service Canada',
-      "La Société canadienne d'hypothèques et de logement"
-    ],
     correct: 0,
-    explanation: "Le RTDRS est un service du gouvernement de l'Alberta qui règle les différends entre locataires et propriétaires, notamment sur le remboursement du dépôt."
+    explanation: "L’Alberta reconnaît le testament olographe, c’est-à-dire un testament entièrement écrit à la main et signé par la personne qui le fait. Aucun témoin n’est nécessaire.",
   },
   {
-    question: "Vous avez un bail d’un an. Après six mois, le propriétaire peut augmenter le loyer s’il vous donne un préavis de trois mois.",
-    answers: ['Vrai', 'Faux'],
-    correct: 1,
-    explanation: "Le loyer ne peut pas être augmenté pendant un bail à durée déterminée. Une hausse peut être prévue pour un nouveau bail à la fin du bail, à condition que les règles applicables aux augmentations de loyer soient respectées."
-  },
-  {
-    question: "Un propriétaire veut entrer dans le logement pour faire une réparation. Quel préavis doit-il donner à son locataire?",
+    question: "Une personne domiciliée en Alberta décède sans avoir fait de testament. Quelles règles s’appliquent généralement à sa succession ?",
     answers: [
-      "Aucun, c'est son immeuble",
-      'Un appel la veille',
-      "Un avis écrit d'au moins 24 heures",
-      "Un avis d'une semaine"
+      'Ses biens sont automatiquement remis au gouvernement.',
+      'Sa famille peut décider librement comment partager ses biens.',
+      'Les règles de la Wills and Succession Act s’appliquent.',
+      'Les règles du pays d’origine de la personne s’appliquent automatiquement.',
     ],
     correct: 2,
-    explanation: "Il faut un avis écrit et signé, remis au moins 24 heures à l'avance, qui indique la raison, la date et l'heure de l'entrée."
-  }
+    explanation: "Lorsqu’une personne décède sans avoir fait de testament, on dit qu’elle est décédée « intestat ». La Wills and Succession Act prévoit alors des règles précises qui déterminent qui peut hériter et dans quelle proportion.",
+  },
+  {
+    question: "Une personne immigrée en Alberta possède un testament qu’elle a fait dans son pays d’origine. Quelle affirmation est la plus exacte ?",
+    answers: [
+      'Le testament est automatiquement invalide en Alberta.',
+      'Le testament est automatiquement valide en Alberta.',
+      'Le testament peut être reconnu en Alberta, mais il est prudent de le faire vérifier.',
+      'Le testament doit obligatoirement être détruit et remplacé.',
+    ],
+    correct: 2,
+    explanation: "La loi albertaine peut reconnaître un testament fait à l’étranger, notamment s’il respecte les règles de forme du pays où il a été fait. Toutefois, d’autres règles de l’Alberta peuvent s’appliquer, par exemple pour les biens immobiliers situés dans la province. Il est donc important de faire vérifier le testament par un juriste.",
+  },
+  {
+    question: "Lequel des changements suivants constitue une bonne raison de revoir son testament ?",
+    answers: [
+      'Un mariage ou une séparation.',
+      'La naissance ou l’adoption d’un enfant.',
+      'L’achat ou la vente d’un bien important.',
+      'Tous ces changements.',
+    ],
+    correct: 3,
+    explanation: "Les changements dans la situation familiale ou financière peuvent avoir une incidence sur les volontés successorales. Par exemple, en Alberta, le mariage n’annule plus automatiquement un testament. Il est donc utile de revoir son testament après tout changement important.",
+  },
+  {
+    question: "Les dettes d’une personne décédée disparaissent automatiquement au moment de son décès.",
+    answers: ['Vrai', 'Faux'],
+    correct: 1,
+    explanation: "Les dettes ne disparaissent pas automatiquement. Le représentant personnel doit notamment déterminer les dettes de la succession et les régler à même les biens de celle-ci, avant de partager ce qui reste entre les héritiers.",
+  },
 ];
