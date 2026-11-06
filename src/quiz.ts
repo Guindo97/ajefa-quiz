@@ -6,54 +6,64 @@ export type Question = {
   explanation?: string;
 };
 
-export const QUIZ_ID = 'quiz-vendredi-2026-10-30';
-export const QUIZ_TITLE = 'Quiz sur la prévention de la fraude et la protection de l’identité';
-export const QUIZ_TOPIC = 'prévention de la fraude et protection de l’identité au Canada';
+export const QUIZ_ID = 'quiz-vendredi-2026-11-06';
+export const QUIZ_TITLE = 'Quiz sur l’immigration et la citoyenneté';
+export const QUIZ_TOPIC = 'immigration et citoyenneté';
 
 export const questions: Question[] = [
   {
-    question: 'Service Canada peut suspendre votre numéro d’assurance sociale (NAS) s’il est lié à une activité criminelle.',
+    question: "Un travailleur étranger dont le permis est lié à un seul employeur et qui subit de la violence au travail n'a que deux choix : rester chez cet employeur ou quitter le Canada.",
     answers: ['Vrai', 'Faux'],
     correct: 1,
     explanation:
-      'Selon le gouvernement du Canada, un NAS n’est pas « suspendu ». C’est un mensonge fréquent des fraudeurs pour obtenir votre NAS ou votre argent. Si quelqu’un vous appelle pour vous demander votre NAS, ne le donnez pas.',
+      "Il peut demander un permis de travail ouvert pour travailleurs vulnérables. Ce permis lui permet de travailler pour presque n'importe quel autre employeur au Canada. La violence peut être physique, sexuelle, psychologique ou financière, et le simple risque d'en subir peut suffire.",
   },
   {
-    question: 'Quelles sont les deux agences d’évaluation du crédit au Canada, auprès desquelles vous pouvez demander une alerte à la fraude en cas de vol d’identité ?',
+    question: 'Vous êtes travailleur étranger temporaire en Alberta. Quelle affirmation est vraie ?',
     answers: [
-      'L’Agence du revenu du Canada et Service Canada',
-      'Visa et Mastercard',
-      'Equifax et TransUnion',
-      'La Banque du Canada',
+      "Le salaire minimum de l'Alberta ne s'applique pas à vous",
+      'Vous avez les mêmes protections au travail que les travailleurs canadiens qui font le même emploi',
+      'Votre employeur peut garder votre passeport pendant votre contrat',
+      "Porter plainte entraîne automatiquement l'annulation de votre permis",
+    ],
+    correct: 1,
+    explanation:
+      "Les normes d'emploi de l'Alberta (salaire minimum, heures supplémentaires, congés), la santé et sécurité au travail et l'indemnisation des accidentés s'appliquent aussi aux travailleurs étrangers. Selon les règles fédérales, un employeur ne peut ni confisquer votre passeport ni vous punir parce que vous avez signalé un problème.",
+  },
+  {
+    question: 'Une personne a parrainé son épouse, qui est devenue résidente permanente il y a un an. Le couple se sépare. Que se passe-t-il ?',
+    answers: [
+      "L'épouse perd automatiquement sa résidence permanente",
+      "Le répondant n'a plus aucune obligation envers elle",
+      "L'épouse garde son statut, et le répondant reste financièrement responsable jusqu'à la fin de son engagement",
+      "L'épouse doit quitter le Canada dans les 90 jours",
     ],
     correct: 2,
     explanation:
-      'Equifax et TransUnion gèrent les dossiers de crédit au Canada. Une alerte à la fraude ajoutée à votre dossier demande aux prêteurs de vérifier votre identité avant d’ouvrir un nouveau compte à votre nom. Consultez aussi votre dossier de crédit régulièrement pour repérer toute activité inconnue.',
+      "Pour un époux ou conjoint, l'engagement de parrainage dure 3 ans à partir de l'obtention de la résidence permanente, et une séparation ne l'annule pas.",
   },
   {
-    question: 'Vous recevez un appel de l’« Agence du revenu du Canada (ARC) ». On vous dit que vous devez des impôts et que la police viendra vous arrêter aujourd’hui si vous ne payez pas en cartes-cadeaux. Que devez-vous faire ?',
+    question: "Une étudiante étrangère est entrée au Canada en 2023. Elle veut demander l'asile aujourd'hui. Selon les règles en vigueur depuis mars 2026, que se passe-t-il ?",
     answers: [
-      'Payer rapidement pour éviter l’arrestation',
-      'Raccrocher, puis contacter l’ARC au numéro inscrit sur son site officiel',
-      'Donner votre numéro d’assurance sociale (NAS) pour prouver votre identité',
-      'Rappeler le numéro laissé par l’agent',
+      "Rien n'a changé : on peut demander l'asile à tout moment",
+      "Sa demande ne sera pas transmise à la Commission de l'immigration et du statut de réfugié, car elle est présentée plus d'un an après son arrivée",
+      'Elle doit d’abord attendre 5 ans au Canada',
+      'Elle obtient automatiquement la résidence permanente',
     ],
     correct: 1,
     explanation:
-      'L’ARC ne demande jamais de paiement en cartes-cadeaux ou en cryptomonnaie et ne menace pas d’arrestation immédiate.',
+      "Selon le document fourni, depuis la loi C-12 (26 mars 2026), une demande d'asile présentée plus d'un an après la première entrée au Canada (pour une entrée après le 24 juin 2020) n'est plus déférée à la CISR. La personne garde toutefois accès à un examen des risques avant renvoi (ERAR), qui la protège contre un renvoi vers un pays où elle serait en danger.",
   },
   {
-    question: 'Vous avez le droit de refuser de donner votre numéro d’assurance sociale (NAS) à un propriétaire qui veut vous louer un logement.',
-    answers: ['Vrai', 'Faux'],
-    correct: 0,
-    explanation:
-      'Un propriétaire n’a pas besoin de votre NAS pour évaluer votre demande de location, et vous pouvez refuser de le donner. Offrez plutôt une autre pièce d’identité. Le NAS n’est pas une pièce d’identité : ne le donnez que lorsque la loi l’exige, par exemple à votre employeur, à votre banque ou au gouvernement.',
-  },
-  {
-    question: 'Si je n’ai pas perdu d’argent, ce n’est pas la peine de signaler une tentative de fraude.',
-    answers: ['Vrai', 'Faux'],
+    question: "Une personne de votre entourage offre de préparer votre demande de résidence permanente pour 2 000 $. Elle n'est ni avocate ni consultante agréée. Que devriez-vous faire ?",
+    answers: [
+      "Accepter, si elle a déjà aidé d'autres personnes avec succès",
+      'Refuser : seuls certains représentants autorisés peuvent être payés pour ce service',
+      'Accepter, si vous la payez en argent comptant',
+      "Accepter, à condition qu'elle ne signe pas les formulaires",
+    ],
     correct: 1,
     explanation:
-      'Il faut signaler même une simple tentative. Les signalements aident les autorités à repérer les nouvelles arnaques et à prévenir d’autres victimes. Vous pouvez signaler une fraude au Centre antifraude du Canada, en ligne ou au 1-888-495-8501 (sans frais).',
+      "Seuls les représentants autorisés, notamment les avocats et les consultants agréés, peuvent être rémunérés pour des conseils ou une représentation en immigration. Un proche peut vous aider gratuitement, et les formulaires d'IRCC sont gratuits. Vérifiez un représentant sur Canada.ca/representant-immigration.",
   },
 ];
